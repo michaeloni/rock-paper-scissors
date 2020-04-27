@@ -4,7 +4,101 @@
     padding: 0;
 }
 
-.game-window{
+body{
     width: 100%;
     height: 100vh;
+    background-color: #ffb5b5;
+    font-family: 'Oxygen', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.game-window{
+    max-width: 1600px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 2rem 0;
+    background-color: #daffb5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-n-round{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e67575;
+    font-size: 3rem;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem;
+    border: 2px solid #e67575;
+}
+.score-n-round .player-points .point, .score-n-round .computer-points .point{
+    margin-top: 2rem;
+}
+
+.player-n-computer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+    max-width: 1200px;
+    width: 100%;
+}
+.game-message{
+    color: #e67575;
+}
+.player, .computer{
+    display: flex;
+    align-items: center;
+}
+.player .pick{
+    margin-left: 3rem;
+}
+.computer .pick{
+    margin-right: 3rem;
+}
+
+
+.computer img{
+    transform: rotateY(180deg);
+}
+
+.weapons{
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5rem 0 3rem 0;
+    justify-content: space-evenly;
+}
+.weapons img{
+    transition: transform 0.2s;
+}
+
+.weapons img:hover{
+    transform: translateY(-7px);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.reset-button{
+    background: #e67575;
+    color: #daffb5;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 2.5rem;
+    transition: transform 0.3s;
+}
+.reset-button:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: transform 0.3s;
 }
